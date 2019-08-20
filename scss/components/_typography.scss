@@ -1,0 +1,30 @@
+.container {
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.headline--secondary {
+    font-weight: lighter;
+}
+.headline--primary {
+    padding-left: 0.5rem;
+    padding-right: 2rem;
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+    color: $darker_sucess;
+
+}
+.link {
+    color: $default_color;
+}
+.blockquote {
+    border-radius: 4px;
+    padding-left: 0.7rem;
+    border-left: 6px solid $sucess_color;
+    font-size: 1.15rem;
+    font-style: italic;
+    margin-left:1.1rem;
+    margin-right: 1.5rem;
+    line-height: 1.2rem;
+}

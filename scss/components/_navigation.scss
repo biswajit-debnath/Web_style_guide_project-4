@@ -1,0 +1,16 @@
+.nav {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.nav__item {
+    @extend %button_layout;
+    margin-bottom: .2rem;
+
+    &:hover {
+        background-color:$sucess_color;
+        & a {
+            color:white;
+        }
+    }
+}
