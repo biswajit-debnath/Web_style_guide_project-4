@@ -1,6 +1,11 @@
 .container {
     width: 92%;
     @include center;
+    line-height: 1.35rem;
+    @include mediaQ{
+        width:80%;
+        font-size: 1.2rem;
+    }
 }
 
 .headline--secondary {
@@ -10,15 +15,16 @@
    
 }
 .headline--primary {
-    padding-left: 0.5rem;
+    padding-left: 1rem;
     padding-right: 2rem;
     font-size: 1.4rem;
     line-height: 1.4rem;
     color: $darker_sucess;
+    margin-bottom: 2rem;
 
 }
 .link {
-    color: $color_default;
+    @extend %link;
 }
 .blockquote {
     border-radius: 4px;

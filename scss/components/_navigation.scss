@@ -1,16 +1,27 @@
 .nav {
     list-style-type: none;
     padding-left: 0;
+    @include mediaQ {
+        @include flexbox;
+        width:60%;
+        margin-right:5rem;
+        margin-left: auto;
+    }
 }
 
 .nav__item {
     @extend %nav_layout;
     margin-bottom: .2rem;
+    font-size:1rem;
 
     &:hover {
         background-color:$color_sucess;
         & a {
             color:white;
         }
+    }
+    @include mediaQ {
+        display: inline-block;
+
     }
 }

@@ -1,4 +1,6 @@
-$pad_nav:0.6rem;
+$font-url:  "https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900";
+$font_stack:  'Lato', sans-serif;
+$pad_nav:0.4rem;
 $pad_btn:0.6rem;
 
 $color_sucess:#58e1c1;
@@ -8,8 +10,10 @@ $color_error:#e4757a;
 $color_warning:#fd7856;
 $color_info:#927bc1;
 
-$text_color:#919191;
+$text_color:#a39e9e;
 $darker_text: darken($text_color, 15);
+
+$breakpoint: 768px;
 
 $button_type:(
     'default' : $color_default,
@@ -17,4 +21,13 @@ $button_type:(
     'error' : $color_error,
     'warning' : $color_warning,
     'info' : $color_info
+);
+$grid_color:(
+    '3': #deb2ee,
+    '4': #7ee6fd,
+    '5': #88d9a0,
+    '6': #3fabca,
+    '7': #ec9fa3,
+    '8': #fd9f85,
+    '12': #80e8d1
 );

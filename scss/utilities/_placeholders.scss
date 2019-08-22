@@ -1,11 +1,16 @@
 %nav_layout {
-    padding: $pad_nav 0;
+    padding: $pad_nav $pad_nav*2;
     border-radius: 5px;
 }
 %btn_layout {
     padding: $pad_btn 0;
     border-radius: 5px;
     font-weight: 600;
-    text-transform: uppercase;
-    font-size: 0.6rem;
+    font-size: 0.7rem;
+}
+%img {
+    width:50%;
+}
+%link {
+    color: $color_default;
 }

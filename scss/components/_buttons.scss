@@ -8,5 +8,20 @@
         
         border: 0;
         color: white;
+        text-transform: uppercase;
+        @include mediaQ {
+            width: 15%;
+        }
     }    
+}
+@include mediaQ{
+    .btn--default[type="submit"] {
+        width: 100%;
+    }
+    .btn--default:first-child {
+        margin-left: 1.5rem;
+    }
+    .btn--info:last-child {
+        margin-right: 1.5rem;
+    }
 }

@@ -17,7 +17,7 @@
     flex-direction: column;
 
     // NOTE: replace with media query mixin if aiming for exceeds
-    @media (min-width: 768px) {
+    @include mediaQ {
       flex-direction: row;
     }
   }
@@ -31,16 +31,20 @@
 
       // concatenate CSS selector, ie when $i = 1,
       // selector would be .grid__col--1
-      &--#{$i} {
-
-        // base styles applied to all grid columns 
+      &--#{$i}.theme__colors {
+        background-color:map-get($map:$grid_color, $key: #{$i});
+        @extend %btn_layout;
+        text-align: left;
+        padding-left: 0.7rem;
+      }  // base styles applied to all grid columns 
         // NOTE: could be converted to a placeholder, along with margin
         // from the  media query
+        &--#{$i} {  
         margin-top: 10px;
         flex-basis: 100%;
 
         // NOTE: replace with media query mixin if aiming for exceeds
-        @media (min-width: 768px) {
+        @include mediaQ {
 
           // base stlyes applied to all grid columns
           margin-top: 0;
@@ -59,7 +63,7 @@
   & + & {
 
     // NOTE: replace with media query mixin if aiming for exceeds
-    @media (min-width: 768px) {
+    @include mediaQ {
 
       // add grid gutter
       margin-left: 10px;
@@ -70,7 +74,19 @@
 .card {
   text-align: left;
   font-size: 0.9rem;
+  @include mediaQ {
+    padding-right: 3rem;
+  }
 }
-#grid .grid__col--12 {
-  background-color: lightgreen
+.grid__col--12 {
+  @include flexbox;
+  flex-direction: column;
+  @include mediaQ {
+    flex-direction: row;
+  }
+}
+@include mediaQ {
+  .centered {
+    @include center;
+  }
 }

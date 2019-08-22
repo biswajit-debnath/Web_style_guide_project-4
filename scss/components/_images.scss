@@ -1,10 +1,11 @@
 
 .img--logo {
-    width:50%;
+    padding-top: 1rem;
+    @extend %img;
 }
 .img--avatar {
     margin-top: 1rem;
-    width: 50%;
+    @extend %img;
 }
 .img--frame {
     width: 100%;
