@@ -2,6 +2,13 @@
   padding: 0.6rem 0;
   border-radius: 5px; }
 
+.btn--default, .btn--success, .btn--error, .btn--warning, .btn--info {
+  padding: 0.6rem 0;
+  border-radius: 5px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.6rem; }
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -415,13 +422,18 @@ a {
   text-align: left;
   font-size: 0.9rem; }
 
+#grid .grid__col--12 {
+  background-color: lightgreen; }
+
 .container {
-  width: 90%;
+  width: 92%;
   text-align: center;
   margin: 0 auto; }
 
 .headline--secondary {
-  font-weight: lighter; }
+  font-weight: lighter;
+  text-align: left;
+  padding-left: 0.5rem; }
 
 .headline--primary {
   padding-left: 0.5rem;
@@ -456,5 +468,67 @@ a {
 
 .img--logo {
   width: 50%; }
+
+.img--avatar {
+  margin-top: 1rem;
+  width: 50%; }
+
+.img--frame {
+  width: 100%;
+  padding: 0.5rem;
+  box-shadow: 0 0 2px #919191; }
+
+.form {
+  margin-top: 1.6rem; }
+
+.form__label--hidden {
+  display: none; }
+
+.form__input {
+  width: 92%;
+  margin: 0.8rem 0;
+  border: none;
+  border-bottom: 4px solid #58e1c1;
+  border-radius: 1px;
+  padding-bottom: 0.4rem;
+  padding-left: 0.4rem; }
+
+::placeholder {
+  color: black; }
+
+.btn--default {
+  background-color: #51ddfc;
+  width: 100%;
+  margin-bottom: 0.8rem;
+  border: 0;
+  color: white; }
+
+.btn--success {
+  background-color: #58e1c1;
+  width: 100%;
+  margin-bottom: 0.8rem;
+  border: 0;
+  color: white; }
+
+.btn--error {
+  background-color: #e4757a;
+  width: 100%;
+  margin-bottom: 0.8rem;
+  border: 0;
+  color: white; }
+
+.btn--warning {
+  background-color: #fd7856;
+  width: 100%;
+  margin-bottom: 0.8rem;
+  border: 0;
+  color: white; }
+
+.btn--info {
+  background-color: #927bc1;
+  width: 100%;
+  margin-bottom: 0.8rem;
+  border: 0;
+  color: white; }
 
 /*# sourceMappingURL=styles.css.map */

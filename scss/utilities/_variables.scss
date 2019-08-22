@@ -1,8 +1,20 @@
-$button_pad:0.6rem;
+$pad_nav:0.6rem;
+$pad_btn:0.6rem;
 
-$sucess_color:#58e1c1;
-$darker_sucess:darken($sucess_color, 10);
-$default_color:#51ddfc;
+$color_sucess:#58e1c1;
+$darker_sucess:darken($color_sucess, 10);
+$color_default:#51ddfc;
+$color_error:#e4757a;
+$color_warning:#fd7856;
+$color_info:#927bc1;
 
 $text_color:#919191;
 $darker_text: darken($text_color, 15);
+
+$button_type:(
+    'default' : $color_default,
+    'success' : $color_sucess,
+    'error' : $color_error,
+    'warning' : $color_warning,
+    'info' : $color_info
+);

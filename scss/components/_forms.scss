@@ -1,0 +1,18 @@
+.form {
+    margin-top: 1.6rem;
+}
+.form__label--hidden {
+    display: none;
+}
+.form__input {
+    width: 92%;
+    margin:0.8rem 0;
+    border: none;
+    border-bottom: 4px solid $color_sucess;
+    border-radius: 1px;
+    padding-bottom: 0.4rem;
+    padding-left: 0.4rem; 
+}
+::placeholder {
+    color:black;
+}

@@ -1,0 +1,12 @@
+
+@each $type,$value in $button_type {
+    .btn--#{$type}{
+        background-color:#{$value}; 
+        width: 100%;
+        @extend %btn_layout;
+        margin-bottom:0.8rem;   
+        
+        border: 0;
+        color: white;
+    }    
+}

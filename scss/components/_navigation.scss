@@ -4,11 +4,11 @@
 }
 
 .nav__item {
-    @extend %button_layout;
+    @extend %nav_layout;
     margin-bottom: .2rem;
 
     &:hover {
-        background-color:$sucess_color;
+        background-color:$color_sucess;
         & a {
             color:white;
         }
